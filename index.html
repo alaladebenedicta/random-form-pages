@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>welcome</title>
+    <style>
+        *{margin:0px;padding:0px;}
+
+        html{
+            background-image:-webkit-linear-gradient(60deg,#dd0909 25%,#fff7f7 25%,#fff7f7 25%,#fff7f7 25%);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            min-height:100%;
+            width:100%;
+        }
+
+        .section{
+            display:block;
+            width:50%;
+            float:right;
+            margin-top:50px;
+        }
+
+        .row{
+            box-sizing:border-box;
+            width:100%; 
+            display:flex; 
+            flex-direction:row;
+            flex-wrap:wrap;	
+        }
+        
+        .col-md-6{width:50%; box-sizing:border-box;}
+        .col-md-12{width:100%; box-sizing:border-box;}
+
+        img{
+            width:20%;
+            margin:10px 10px 0px 0px;
+        }
+
+        h1{
+            font-size:25px;
+            padding:0px;
+        }
+
+        .about p{
+            font-size:20px;
+            padding:40px 150px 20px 0px;
+            line-height:1.5;
+            color:#4d4d4d;
+        }
+
+        .register{
+            margin:20px 0px;
+        }
+
+        .register a{text-decoration:none;}
+
+        .register button{
+            height:40px;
+            width:130px;
+            font-size:17px;
+            background-color:transparent;
+            border:1px solid #ff9999;
+            border-radius:5px;
+            cursor: pointer;
+            outline:none;
+            display:block;
+            color:#ff0000;
+        }
+
+        .register button:hover{
+            background-color:#ff0000;
+            color:#fff;
+            font-size:17px;
+            letter-spacing:1px;
+            box-shadow:0px 4px 4px rgba(0, 0, 0, 0.3);
+            transition:0.5s ease-in;
+        }
+        
+        .register p{
+            font-size:16px;
+            padding:10px 20px 20px;
+            color:#4d4d4d;
+        }
+
+        #login a{color:#dd0909;text-decoration:underline;}
+
+        @media only screen and (max-width: 768px) {
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        .section{
+            display:block;
+            width:100%;
+        }
+
+        img{
+            margin:20px 0px 0px 20px;
+        }
+
+        h1{
+            padding-left:20px;
+        }
+
+        .about p{
+            font-size:17px;
+            padding:15px 20px 0px;
+        }
+
+        .register button{
+            width:300px;
+            display:block;
+            margin:10px auto;
+        }
+
+        .register {
+            text-align:center;
+            display:block;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <section class="section">
+        <div class="row">
+            <img src="logo.png" alt="logo">
+            <h1 class="col-md-12">Lorem ipsum</h1>
+        </div>
+        <div class="row about">
+            <p class="col-md-12">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Quam amet aliquam possimus repellat inventore voluptas alias 
+                doloremque et tempore temporibus incidunt, illum assumenda aspernatur 
+                excepturi ipsum vero, ex enim laudantium.</p>
+        </div>
+        <div class="row register">
+            <a href="register.html"><button type="submit" class="col-md-6 signup">Sign up</button></a>
+            <p class="col-md-6">already have an account? <span id="login"><a href="login.html">Log in</a></span></p>
+        </div>
+    </section>
+</body>
+</html>
+
